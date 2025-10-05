@@ -13,7 +13,7 @@ load_dotenv()  # Load environment variables from .env file
 print(f"--- Loaded API Key: {os.getenv('GEMINI_API_KEY')} ---")
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 # Use the newer, faster, and more reliable Flash model
-model = genai.GenerativeModel("gemini-1.5-flash-latest")
+model = genai.GenerativeModel("gemini-flash-latest")
 # ---------------------------
 
 app = FastAPI()
